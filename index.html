@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Linking CSS file  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <!-- Moment.js Reference -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Train Scheduler</h1>
+        </div>
+        <!-- Train Scheduler Table -->
+        <div class="row trainSchedule">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h1 class="card-header">Current Train Schedule</h1>
+                    <div>
+                        <table class="table" id="train_table">
+                            <!-- th Headers -->
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Train data will display here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br >
+        <div class="row addTrain">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h1 class="card-header">Add Train</h1>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="trainName">Train Name</label>
+                                <input type="text" class="form-control" id="trainName" placeholder="enter name">
+                            </div>
+                            <div class="form-group">
+                                <label for="trainDestination">Destination</label>
+                                <input type="text" class="form-control" id="trainDest" placeholder="enter destination">
+                            </div>
+                            <div class="form-group">
+                                <label for="trainTime">First Train Time (military time)</label>
+                                <input type="military time" class="form-control" id="trainTime" placeholder="hh:mm">
+                            </div>
+                            <div class="form-group">
+                                <label for="trainFrequency">Frequency (min)</label>
+                                <input type="number" class="form-control" id="trainFreq" placeholder="enter frequency">
+                            </div>
+                            <button type="submit" class="submit_btn" id="add_trains">Submit</button>
+                            <button type="reset" class="clear_btn">Clear</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<br >
+    </div>
+	
+	<!-- Footer -->
+    <footer class="footer col-sm-12">
+        <div class="container">
+            <p><span class="text-muted">&copy; Copyright Rosita Cabrera</span></p>
+        </div>
+    </footer>
+	
+	
+	
+	
+    <!-- Bootstrap js/jQuery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- javascript-->
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>

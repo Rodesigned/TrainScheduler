@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+     background-image: url("../images/train_bg.jpg");
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+ 
+.jumbotron {
+    color: white;
+    background-color: #525252;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-header {
+    color: white;
+    background-color: #7BC9C4;
+    font-weight: bold;
+	border-style: solid;
+	border-color: #7BC9C4;
+}
+
+.card {
+	border-style: solid;
+	border-color: #7BC9C4;
+}
+
+h1 {
+	font-size: 1.2rem;
+}
+
+/* button to submit content */
+button.submit_btn {
+	color: white;
+	background-color: #0C75AC;
+}
+
+/* button to clear content */
+button.clear_btn {
+	color: white;
+	background-color: #7BC9C4;
+}
+
+/* created class in js */
+.updateTrainBtn {
+	color: white;
+	background-color: #0C75AC;
+}
+/* created class in js */
+.removeTrainBtn {
+	color: white;
+	background-color: #7BC9C4;
+}
+
+p span {
+	font-size: 10px;
+}
+
+/* footer */
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+/* Margin bottom by footer height */
+body {
+	margin-bottom: 45px;
+}
+.footer {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px; /* Set the fixed height of the footer here */
+    line-height: 40px; /* Vertically center the text there */
+    color:#f8f7fd;
+    background-color: #525252;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
